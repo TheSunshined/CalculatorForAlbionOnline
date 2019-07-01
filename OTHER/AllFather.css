@@ -1,0 +1,61 @@
+body {background: black;font-size: 2rem;font-family: monospace;margin: auto;color: white;}
+    #show {color: white;margin-top: 35px;background: #E51A4B;padding: 5px;}
+    label {color: white;}
+    .box {background: #191919;padding: 5px;margin: 5px;}
+    .box:nth-child(2n) {background: #272727;}
+    input {height: 55px;width: 100px;background: #272727;border: 2px solid white;color: white;font-weight: bold;font-size: 2rem;margin: 10px 10px;}
+    input[type=submit] {width: 200px;margin: auto;display: block;}
+    input:hover, select:hover {background: #E51A4B;transition: 1s;}
+    select {width: 200px;font-size: 1.5rem;font-weight: bold;background: #272727;color: white;border: 2px solid white;}
+    #important {background: #E51A4B;display: inline-block;}
+    a {text-decoration: none;background: #E51A4B;color: white;}
+
+.Container {position: relative;display: inline-block;padding: 80px 40px 0px 40px; cursor: pointer;user-select: none;margin-bottom: 10px;}
+    
+.Container input {position: absolute;opacity: 0;cursor: pointer;width: 0px;margin: 0px;padding: 0px;}    
+img {height: 50px;width: 50px;top:0px;left: 40px;padding: 10px; position: absolute;border-radius: 50%;border: 3px solid white;transition: 1s;}
+    
+.Container input:checked ~ img {
+    background: #E51A4B;border: 3px solid #E51A4B;transition: 1s;}
+    img {height: 40px;width: 40px;margin: 5px;}
+    
+    #select2 #img1 img,
+    #select2 #img2 img,
+    #select2 #img3 img,
+    #select2 #img4 img,
+    #select2 #img5 img,
+    #select2 #img6 img,
+    #select2 #img7 img,
+    #select2 #img8 img,
+    #select3 #Image0 img,
+    #select3 #Image1 img,
+    #select3 #Image2 img,
+    #select3 #Image3 img
+    
+    {padding: 0px;height: 60px;width: 60px;border: 5px solid black;left: -4px}
+    
+    #select2 .Container input:checked ~ #img1 img,
+    #select2 .Container input:checked ~ #img2 img,
+    #select2 .Container input:checked ~ #img3 img,
+    #select2 .Container input:checked ~ #img4 img,
+    #select2 .Container input:checked ~ #img5 img,
+    #select2 .Container input:checked ~ #img6 img,
+    #select2 .Container input:checked ~ #img7 img,
+    #select2 .Container input:checked ~ #img8 img,
+    #select3 .Container input:checked ~ #Image0 img,
+    #select3 .Container input:checked ~ #Image1 img,
+    #select3 .Container input:checked ~ #Image2 img,
+    #select3 .Container input:checked ~ #Image3 img
+    
+    
+    {background: #E51A4B;border: 5px solid #E51A4B;transition: 1s;}
+    
+    #select2 .Container {padding: 80px 25px 0px 20px;}
+    
+    
+    #select3 .Container {padding: 80px 20px 0px 14px;}
+
+#AllForm {max-width: 700px;min-width: 700px;float:  right;}
+#Show2 {max-width: 500px;min-width: 500px;float: right;margin-right: 50px;}
+#center {margin: auto;display: table;}
+    

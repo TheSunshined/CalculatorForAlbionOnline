@@ -1,0 +1,107 @@
+<script>
+function ResetTier () {
+        
+    }
+    
+var Path = "TYPE/" + getCookie("typ");  
+    
+$(document).ready(function(){
+    
+var Quality = "HTML/Quality.html";
+
+show.innerHTML = Path;
+    $("#Hide1").click(function(){
+        ResetTier();
+        document.cookie = "tier=1";
+        UpInfo ();
+        $("#Chose3").load(Quality)
+        });
+    $("#Hide2").click(function(){
+        ResetTier();
+        document.cookie = "tier=2";
+        UpInfo ();
+        $("#Chose3").load(Quality)
+        });
+    $("#Hide3").click(function(){
+        ResetTier();
+        document.cookie = "tier=3";
+        UpInfo ();
+        $("#Chose3").load(Quality)
+        });
+    $("#Hide4").click(function(){
+        ResetTier();
+        document.cookie = "tier=4";
+        UpInfo ();
+        $("#Chose3").load(Quality)
+        });
+    $("#Hide5").click(function(){
+        ResetTier();
+        document.cookie = "tier=5";
+        UpInfo ();
+        $("#Chose3").load(Quality)
+        });
+    $("#Hide6").click(function(){
+        ResetTier();
+        document.cookie = "tier=6";
+        UpInfo ();
+        $("#Chose3").load(Quality)
+        });
+    $("#Hide7").click(function(){
+        ResetTier();
+        document.cookie = "tier=7";
+        UpInfo ();
+        $("#Chose3").load(Quality)
+        });
+    $("#Hide8").click(function(){
+        ResetTier();
+        document.cookie = "tier=8";
+        UpInfo ();
+        $("#Chose3").load(Quality)
+        });
+    });
+    
+</script>
+
+<h4>Wybierz tier:</h4>
+<form id="select2">
+    <label class="Container">T1
+        <input id="Hide1" type="radio" name="Tier">
+        <script>img1.innerHTML = '<img src="' + Path + '/T10.png">'</script>
+        <div id="img1"></div>
+    </label>
+    <label class="Container">T2
+        <input id="Hide2" type="radio" name="Tier" >
+        <script>img2.innerHTML = '<img src="' + Path + '/T20.png">'</script>
+        <div id="img2"></div>
+    </label>
+    <label class="Container">T3
+        <input id="Hide3" type="radio" name="Tier" >
+        <script>img3.innerHTML = '<img src="' + Path + '/T30.png">'</script>
+        <div id="img3"></div>
+    </label>
+    <label class="Container">T4
+        <input id="Hide4" type="radio" name="Tier" >
+        <script>img4.innerHTML = '<img src="' + Path + '/T40.png">'</script>
+        <div id="img4"></div>
+    </label>
+    <label class="Container">T5
+        <input id="Hide5" type="radio" name="Tier">
+        <script>img5.innerHTML = '<img src="' + Path + '/T50.png">'</script>
+        <div id="img5"></div>
+    </label>
+    <label class="Container">T6
+        <input id="Hide6" type="radio" name="Tier" >
+        <script>img6.innerHTML = '<img src="' + Path + '/T60.png">'</script>
+        <div id="img6"></div>
+    </label>
+    <label class="Container">T7
+        <input id="Hide7" type="radio" name="Tier" >
+        <script>img7.innerHTML = '<img src="' + Path + '/T70.png">'</script>
+        <div id="img7"></div>
+    </label>
+    <label class="Container">T8
+        <input id="Hide8" type="radio" name="Tier" >
+        <script>img8.innerHTML = '<img src="' + Path + '/T80.png">'</script>
+        <div id="img8"></div>
+    </label>
+</form>

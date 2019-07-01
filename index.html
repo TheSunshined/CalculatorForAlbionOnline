@@ -1,0 +1,94 @@
+<html>
+<head>
+<meta charset="utf-8">
+
+<script src="OTHER/JQ.js"></script>
+<script src="calculation.js"></script>
+<link href="OTHER/AllFather.css" type="text/css" rel="stylesheet">
+
+<script>
+    function ResetCookie () {
+        document.cookie = "typ=Hide; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+      document.cookie = "typ=Iron; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+      document.cookie = "typ=Flax; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+      document.cookie = "typ=Stone; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+    }
+    
+    function UpInfo () {
+        show.innerHTML = document.cookie;
+    }
+    
+    function getCookie(name) {
+  var value = "; " + document.cookie;
+  var parts = value.split("; " + name + "=");
+  if (parts.length == 2) return parts.pop().split(";").shift();
+}
+    
+var TierPath = "HTML/Tier.html";
+    
+$(document).ready(function(){
+  $("#Hide").click(function(){
+      ResetCookie();
+      document.cookie = "typ=Hide";
+      UpInfo();
+    $("#Chose2").load(TierPath);
+  });
+    $("#Iron").click(function(){
+        ResetCookie();
+      document.cookie = "typ=Iron";
+        UpInfo();
+    $("#Chose2").load(TierPath);
+  });
+    $("#Flax").click(function(){
+        ResetCookie();
+      document.cookie = "typ=Flax";
+        UpInfo();
+    $("#Chose2").load(TierPath);
+  });
+    $("#Stone").click(function(){
+        ResetCookie();
+      document.cookie = "typ=Stone";
+        UpInfo();
+    $("#Chose2").load(TierPath);
+  });
+});
+
+</script>
+</head>
+<body>
+
+<br>
+<div id="center">
+<div id="AllForm">
+    <label style="text-align: center;display: block;"> Kalkulator do podstawowych "craftów" w <div id="important">Albion Online</div>.<br><br>
+Dzięki niemu możesz w <div id="important">przybliżeniu</div> wyliczyć liczbę itemów otrzymanych po "craftingu".    
+    </label>
+    <br><br>
+<label class="Container">Skóra
+    <input id="Hide" type="radio" name="typ" >
+    <img src="TYPE/Hide.svg">
+</label>
+<label class="Container">Żelazo
+    <input id="Iron" type="radio" name="typ" >
+    <img src="TYPE/Iron.svg">
+</label>
+<label class="Container">Len
+    <input id="Flax" type="radio" name="typ" >
+    <img src="TYPE/Flax.svg">
+</label>
+<label class="Container">Kamień
+    <input id="Stone" type="radio" name="typ" >
+    <img src="TYPE/Stone.svg">
+</label>
+
+<div id="Chose2"></div>
+<div id="Chose3"></div>
+<div id="show"></div><br>
+<div id="Chose4"></div>
+    By: <div id="important"> <a href="https://github.com/TheSunshined">TheSunshine</a></div>
+    <br>Inne projekty: <a href="https://github.com/TheSunshined">https://github.com/TheSunshined</a>
+    </div>
+<div id="show2">Tutaj otrzymasz wynik</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<script>
+    
+var tier = getCookie("tier"); 
+var typ = getCookie("typ");
+var Form = "HTML/FORM/T";
+    $(document).ready(function(){
+    $("#Level0").click(function(){
+        ResetTier();
+        document.cookie = "level=0";
+        UpInfo ();
+        $("#Chose4").load(Form + tier + getCookie("level") + ".HTML")
+    });
+    $("#Level1").click(function(){
+        ResetTier();
+        document.cookie = "level=1";
+        UpInfo ();
+        $("#Chose4").load(Form + tier + getCookie("level") + ".HTML")
+    });
+    $("#Level2").click(function(){
+        ResetTier();
+        document.cookie = "level=2";
+        UpInfo ();
+        $("#Chose4").load(Form + tier + getCookie("level") + ".HTML")
+    });
+    $("#Level3").click(function(){
+        ResetTier();
+        document.cookie = "level=3";
+        UpInfo ();
+        $("#Chose4").load(Form + tier + getCookie("level") + ".HTML")
+    });
+});
+</script>
+<h4>Wybierz level:</h4>
+<form id="select3">
+<label class="Container">
+        <script> Text0.innerHTML = tier +".0";</script>
+        <div id="Text0"></div>
+        <input id="Level0" type="radio" name="level">
+        <script> Image0.innerHTML = '<img src="' + Path + '/T' + tier + '0.png">';</script>
+        <div id="Image0"></div>
+    </label>
+    <label class="Container">
+        <script> Text1.innerHTML = tier +".1";</script>
+        <div id="Text1"></div>
+        <input id="Level1" type="radio" name="level" >
+        <script> Image1.innerHTML = '<img src="' + Path + '/T' + tier + '1.png">';</script>
+        <div id="Image1"></div>
+    </label>
+    <label class="Container">
+        <script> Text2.innerHTML = tier +".2";</script>
+        <div id="Text2"></div>
+        <input id="Level2" type="radio" name="level" >
+        <script> Image2.innerHTML = '<img src="' + Path + '/T' + tier + '2.png">';</script>
+        <div id="Image2"></div>
+    </label>
+    <label class="Container">
+        <script> Text3.innerHTML = tier +".3";</script>
+        <div id="Text3"></div>
+        <input id="Level3" type="radio" name="level" >
+        <script> Image3.innerHTML = '<img src="' + Path + '/T' + tier + '3.png">';</script>
+        <div id="Image3"></div>
+    </label>
+</form>
