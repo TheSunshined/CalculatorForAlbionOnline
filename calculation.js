@@ -1,4 +1,62 @@
-function T40 () {
+
+function T20 () {
+
+var b = var2.value;
+var Percent = var3.value;
+var Chose = typ;
+
+
+b = b*1;
+Percent = Percent*0.01;
+        
+
+var data = "";
+var loop = 0;
+var Value1 = 0;
+        
+data += "Wyniki<br>";
+do {
+        var CraftCount = b;
+        var b = b*Percent;
+        
+    
+        function cout () 
+        {
+            var secondary = (b - Math.floor(b))*100;
+            var secondary3 = (CraftCount - Math.floor(CraftCount))*100;
+            Value1 = Value1 + CraftCount;
+
+            loop++;
+            data += '<div class="box">Craft: ' + loop + "  Teoretyczna ilość wyprodukowanej/ego " + Chose + ": " + Math.floor(CraftCount) + " i %" + Math.round(secondary3) + " szansy na dodatkowy craft" + "<br> Item 1x: " + Math.floor(b) + " i %" + Math.round(secondary) + ' na jeden dodatkowy zwrot<br></div>';
+        }
+        if ( b < 1)
+        { 
+        cout();
+        break;
+        }
+        else
+        {
+        cout();
+        }
+    
+    }
+while (b > 1);
+        
+        show2.innerHTML = data + "<br>W przybliżeniu wyjdzie łącznie: " + Math.floor(Value1) +" " + Chose + '<br> A po samym "craftingu" zostanie: ' + Math.floor(b)+" " + Chose + ' 1x <br> Wszystko zostało zaokrąglone w dół.' ;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function T40T30 () {
         
 var a = var1.value;
 var b = var2.value;
